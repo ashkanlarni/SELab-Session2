@@ -1,3 +1,6 @@
+package tests;
+
+import com.company.Rectangle;
 import org.junit.Test;
 import org.junit.Assert;
 
