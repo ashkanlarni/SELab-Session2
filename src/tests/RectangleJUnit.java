@@ -9,21 +9,21 @@ public class RectangleJUnit {
     public void computeArea(){
         Shape rectangle = new Rectangle(2, 3);
         double area = rectangle.computeArea();
-        Assert.assertEquals(6.0, area);
+        Assert.assertEquals(6.0, area, 0.0);
     }
 
     @Test
     public void changeWidth() {
-        Shape rectangle = new Rectangle(3, 4);
+        Rectangle rectangle = new Rectangle(3, 4);
         rectangle.setWidth(5);
-        Assert.assertEquals(5, rectangle.getWidth());
+        Assert.assertEquals(5, rectangle.getWidth(), 0.0);
     }
 
     @Test
     public void changeHeight() {
-        Shape rectangle = new Rectangle(3, 4);
+        Rectangle rectangle = new Rectangle(3, 4);
         rectangle.setHeight(6);
-        Assert.assertEquals(6, rectangle.getHeight());
+        Assert.assertEquals(6, rectangle.getHeight(), 0.0);
     }
 }
 
