@@ -1,31 +1,32 @@
 package com.company;
 
-public class Rectangle {
+public class Rectangle implements Shape {
     private double width;
     private double height;
 
-    public Rectangle(double width, double height) {
+    public void setWidth(double width) {
         this.width = width;
-        this.height = height;
     }
 
-    public double computeArea() {
-        return this.height * this.width;
+    public void setHeight(double height) {
+        this.height = height;
     }
 
     public double getWidth() {
         return width;
     }
 
-    public void setWidth(double width) {
-        this.width = width;
-    }
-
     public double getHeight() {
         return height;
     }
 
-    public void setHeight(double height) {
-        this.height = height;
+    public Rectangle(double width, double height) {
+        this.setWidth(width);
+        this.setHeight(height);
     }
+
+    public double computeArea() {
+        return getWidth() * getHeight();
+    }
+
 }
